@@ -29,13 +29,19 @@ class ListItemStack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Stack(
-      fit: StackFit.expand,
-      children: <Widget>[
-        new ListItemImage(product),
-        new ListItemRating(product),
-        new ListItemName(product),
-      ],
+    return Material(
+      elevation: 8.0,
+      child: InkWell(
+        onTap: () => print(product.name + " tapped"),
+        child: new Stack(
+          fit: StackFit.expand,
+          children: <Widget>[
+            new ListItemImage(product),
+            new ListItemRating(product),
+            new ListItemName(product),
+          ],
+        ),
+      ),
     );
   }
 }
