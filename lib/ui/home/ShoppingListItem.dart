@@ -9,7 +9,7 @@ class ShoppingListItem extends StatelessWidget {
           color: Colors.black,
           width: 1.0,
         )),
-        margin: const EdgeInsets.all(20.0),
+        margin: const EdgeInsets.all(4.0),
         child: new Container(
           child: new ListItemStack(),
         ));
@@ -52,6 +52,7 @@ class ListItemRating extends StatelessWidget {
               new Icon(
                 Icons.star,
                 color: Colors.yellow,
+                size: 18.0,
               ),
               new SizedBox(
                 width: 5.0,
@@ -62,7 +63,7 @@ class ListItemRating extends StatelessWidget {
                 style: new TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  fontSize: 20.0,
+                  fontSize: 14.0,
                 ),
               )
             ],
@@ -89,17 +90,17 @@ class ListItemName extends StatelessWidget {
     return new Align(
       alignment: Alignment.bottomCenter,
       child: new Container(
-        color: Colors.black38,
+        color: Colors.black.withOpacity(0.5),
         constraints: BoxConstraints.expand(
-          height: 80.0,
+          height: 40.0,
         ),
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(4.0),
           child: Center(
             child: new Text(
               "Blue Shirt",
               style: TextStyle(
-                fontSize: 40.0,
+                fontSize: 18.0,
                 color: Colors.white,
               ),
             ),
