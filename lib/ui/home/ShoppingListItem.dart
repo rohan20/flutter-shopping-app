@@ -1,36 +1,50 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_e_commerce/model/Product.dart';
 
 class ShoppingListItem extends StatelessWidget {
+
+  final Product product;
+
+  const ShoppingListItem({@required this.product});
+
   @override
   Widget build(BuildContext context) {
     return new Container(
         decoration: new BoxDecoration(
             border: Border.all(
-          color: Colors.black,
-          width: 1.0,
-        )),
+              color: Colors.black,
+              width: 1.0,
+            )),
         margin: const EdgeInsets.all(4.0),
         child: new Container(
-          child: new ListItemStack(),
+          child: new ListItemStack(product),
         ));
   }
 }
 
 class ListItemStack extends StatelessWidget {
+  final Product product;
+
+  ListItemStack(this.product);
+
   @override
   Widget build(BuildContext context) {
     return new Stack(
       fit: StackFit.expand,
       children: <Widget>[
-        new ListItemImage(),
-        new ListItemRating(),
-        new ListItemName(),
+        new ListItemImage(product),
+        new ListItemRating(product),
+        new ListItemName(product),
       ],
     );
   }
 }
 
 class ListItemRating extends StatelessWidget {
+  final Product product;
+
+  ListItemRating(this.product);
+
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -49,42 +63,50 @@ class ListItemRating extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              new Icon(
-                Icons.star,
-                color: Colors.yellow,
-                size: 18.0,
-              ),
-              new SizedBox(
-                width: 5.0,
-              ),
-              new Text(
-                "4.9",
-                maxLines: 1,
-                style: new TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontSize: 14.0,
-                ),
-              )
-            ],
+          new Icon(
+          Icons.star,
+            color: Colors.yellow,
+            size: 18.0,
           ),
-        ),
+          new SizedBox(
+            width: 5.0,
+          ),
+          new Text(
+          product.rating.toString(),
+          maxLines: 1,
+          style: new TextStyle(
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+          fontSize: 14.0,
+          ),
+        )
+        ],
       ),
+    ),)
+    ,
     );
   }
 }
 
 class ListItemImage extends StatelessWidget {
+  final Product product;
+
+  ListItemImage(this.product);
+
   @override
   Widget build(BuildContext context) {
     return new Image.network(
-      "https://assets.abfrlcdn.com/img/app/product/1/199775-614183-large.jpg",
+      product.imageUrl,
       fit: BoxFit.cover,
     );
   }
 }
 
 class ListItemName extends StatelessWidget {
+  final Product product;
+
+  ListItemName(this.product);
+
   @override
   Widget build(BuildContext context) {
     return new Align(
@@ -98,7 +120,7 @@ class ListItemName extends StatelessWidget {
           padding: const EdgeInsets.all(4.0),
           child: Center(
             child: new Text(
-              "Blue Shirt",
+              product.name,
               style: TextStyle(
                 fontSize: 18.0,
                 color: Colors.white,
