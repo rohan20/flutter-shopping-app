@@ -33,9 +33,8 @@ class ListItemStack extends StatelessWidget {
       child: InkWell(
         onTap: () {
           print(product.name + " tapped");
-          Navigator
-              .of(context)
-              .push(new MaterialPageRoute(builder: (context) => new DetailPage()));
+          Navigator.of(context).push(
+              new MaterialPageRoute(builder: (context) => new DetailPage()));
         },
         child: new Stack(
           fit: StackFit.expand,
@@ -59,11 +58,17 @@ class DetailPage extends StatelessWidget {
       home: new Scaffold(
         appBar: new AppBar(
           title: new Text("Product detail"),
+          leading: new IconButton(
+            icon: new Icon(Icons.arrow_back),
+            color: Colors.white,
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
         ),
       ),
     );
   }
-
 }
 
 class ListItemRating extends StatelessWidget {
