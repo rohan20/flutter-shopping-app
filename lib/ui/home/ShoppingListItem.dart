@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce/model/Product.dart';
 
 class ShoppingListItem extends StatelessWidget {
-
   final Product product;
 
   const ShoppingListItem({@required this.product});
@@ -12,9 +11,9 @@ class ShoppingListItem extends StatelessWidget {
     return new Container(
         decoration: new BoxDecoration(
             border: Border.all(
-              color: Colors.black,
-              width: 1.0,
-            )),
+          color: Colors.black,
+          width: 1.0,
+        )),
         margin: const EdgeInsets.all(4.0),
         child: new Container(
           child: new ListItemStack(product),
@@ -32,7 +31,12 @@ class ListItemStack extends StatelessWidget {
     return Material(
       elevation: 8.0,
       child: InkWell(
-        onTap: () => print(product.name + " tapped"),
+        onTap: () {
+          print(product.name + " tapped");
+          Navigator
+              .of(context)
+              .push(new MaterialPageRoute(builder: (context) => new DetailPage()));
+        },
         child: new Stack(
           fit: StackFit.expand,
           children: <Widget>[
@@ -44,6 +48,22 @@ class ListItemStack extends StatelessWidget {
       ),
     );
   }
+}
+
+class DetailPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      color: Colors.green,
+      debugShowCheckedModeBanner: false,
+      home: new Scaffold(
+        appBar: new AppBar(
+          title: new Text("Product detail"),
+        ),
+      ),
+    );
+  }
+
 }
 
 class ListItemRating extends StatelessWidget {
@@ -69,27 +89,27 @@ class ListItemRating extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-          new Icon(
-          Icons.star,
-            color: Colors.yellow,
-            size: 18.0,
+              new Icon(
+                Icons.star,
+                color: Colors.yellow,
+                size: 18.0,
+              ),
+              new SizedBox(
+                width: 5.0,
+              ),
+              new Text(
+                product.rating.toString(),
+                maxLines: 1,
+                style: new TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 14.0,
+                ),
+              )
+            ],
           ),
-          new SizedBox(
-            width: 5.0,
-          ),
-          new Text(
-          product.rating.toString(),
-          maxLines: 1,
-          style: new TextStyle(
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-          fontSize: 14.0,
-          ),
-        )
-        ],
+        ),
       ),
-    ),)
-    ,
     );
   }
 }
