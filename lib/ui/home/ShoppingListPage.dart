@@ -10,8 +10,9 @@ class ShoppingListPage extends StatelessWidget {
       );
 
   get androidTheme => ThemeData(
-        primaryColor: Colors.blue[100],
-        accentColor: Colors.blue[400],
+        primaryColor: Colors.blue[500],
+        primaryColorDark: Colors.blue[700],
+        accentColor: Colors.pinkAccent,
       );
 
   @override
@@ -26,6 +27,14 @@ class ShoppingListPage extends StatelessWidget {
         appBar: new AppBar(
           title: new Text("Shopping App"),
           elevation: devicePlatform() ? 0.0 : 4.0,
+          actions: <Widget>[
+            new IconButton(
+              icon: new Icon(Icons.sort),
+              onPressed: () {
+                print("Sort icon pressed");
+              },
+            ),
+          ],
         ),
       ),
     );
