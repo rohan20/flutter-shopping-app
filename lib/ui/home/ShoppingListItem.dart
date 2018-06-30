@@ -66,6 +66,13 @@ class DetailPage extends StatelessWidget {
             },
           ),
         ),
+        floatingActionButton: new FloatingActionButton(
+          onPressed: () {},
+          child: new Icon(
+            Icons.shopping_cart,
+            color: Colors.white,
+          ),
+        ),
       ),
     );
   }

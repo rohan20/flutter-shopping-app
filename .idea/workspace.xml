@@ -54,8 +54,8 @@
       <file leaf-file-name="ShoppingListItem.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+            <state relative-caret-position="383">
+              <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -79,6 +79,7 @@
       <find>ina</find>
       <find>primarySwatch</find>
       <find>_productsList</find>
+      <find>DetailPage</find>
     </findStrings>
     <replaceStrings>
       <replace>Constants.productsList()</replace>
@@ -429,8 +430,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+        <state relative-caret-position="383">
+          <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
