@@ -1,6 +1,6 @@
 # Flutter Shopping App
 
-A basic shopping card design built using Flutter.
+A basic shopping app design built using Flutter.
 
 Android             |  iOS
 :-------------------------:|:-------------------------:
