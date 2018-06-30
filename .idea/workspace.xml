@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a7a32b4-5038-4e18-a9bf-8e566df81d36" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,36 +24,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingListPage.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ShoppingListPage.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="195">
+              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#775#1702#0" />
+                <element signature="e#1356#5549#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShoppingListItem.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShoppingListItem.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="207">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ink_well.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/material/ink_well.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="592" column="47" lean-forward="true" selection-start-line="592" selection-start-column="47" selection-end-line="592" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -84,8 +75,8 @@
         <option value="$PROJECT_DIR$/lib/home/ShoppingListPage.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/model/Product.dart" />
-        <option value="$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart" />
         <option value="$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart" />
+        <option value="$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart" />
       </list>
     </option>
   </component>
@@ -364,17 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#775#1702#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../flutter/packages/flutter/lib/src/material/ink_well.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -384,10 +364,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="207">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#1356#5549#0" />
           </folding>
         </state>
       </provider>
