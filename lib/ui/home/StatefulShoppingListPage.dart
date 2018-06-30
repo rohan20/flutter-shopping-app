@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_e_commerce/model/Product.dart';
 import 'package:flutter_e_commerce/ui/home/ShoppingListItem.dart';
 import 'package:flutter_e_commerce/util/Constants.dart';
+import 'package:flutter_e_commerce/util/Themes.dart';
 
 class StatefulShoppingListPage extends StatefulWidget {
   @override
@@ -11,33 +12,23 @@ class StatefulShoppingListPage extends StatefulWidget {
 }
 
 class StatefulShoppingListPageState extends State<StatefulShoppingListPage> {
-  get iosTheme => ThemeData(
-        primaryColor: Colors.grey[100],
-        primarySwatch: Colors.blue,
-        primaryColorBrightness: Brightness.light,
-      );
-
-  get androidTheme => ThemeData(
-        primaryColor: Colors.blue[500],
-        primaryColorDark: Colors.blue[700],
-        accentColor: Colors.pinkAccent,
-      );
-
   List<Product> productsList = Constants.productsList();
   bool isSorted = false;
 
   @override
   Widget build(BuildContext context) {
-    bool devicePlatform() => Theme.of(context).platform == TargetPlatform.iOS;
+    bool isDevicePlatformIos() {
+      return Theme.of(context).platform == TargetPlatform.iOS;
+    }
 
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: devicePlatform() ? iosTheme : androidTheme,
+      theme: isDevicePlatformIos() ? Themes.iosTheme() : Themes.androidTheme(),
       home: new Scaffold(
         body: _gridView(),
         appBar: new AppBar(
           title: new Text("Shopping App"),
-          elevation: devicePlatform() ? 0.0 : 4.0,
+          elevation: isDevicePlatformIos() ? 0.0 : 4.0,
           actions: <Widget>[
             new IconButton(
               icon: new Icon(Icons.sort),
@@ -68,14 +59,12 @@ class StatefulShoppingListPageState extends State<StatefulShoppingListPage> {
     );
   }
 
-
-
   void toggleItemsSorting() {
     if (isSorted) {
       productsList = Constants.productsList();
     } else {
       productsList.sort(
-        (a, b) => a.rating.compareTo(b.rating),
+        (a, b) => a.name.compareTo(b.name),
       );
     }
     isSorted = !isSorted;
