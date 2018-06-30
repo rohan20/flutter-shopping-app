@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a7a32b4-5038-4e18-a9bf-8e566df81d36" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/ui/detail/DetailPage.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/util/Themes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home/ShoppingListItem.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home/ShoppingListPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/home/StatefulShoppingListPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home/StatefulShoppingListPage.dart" afterDir="false" />
-    </list>
+    <list default="true" id="1a7a32b4-5038-4e18-a9bf-8e566df81d36" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,8 +48,8 @@
       <file leaf-file-name="StatefulShoppingListPage.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/ui/home/StatefulShoppingListPage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+            <state relative-caret-position="36">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -262,6 +255,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Android Profiler" order="7" />
@@ -282,9 +276,9 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.21818182" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.21818182" />
       <window_info id="Captures" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.24964234" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -464,8 +458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui/home/StatefulShoppingListPage.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="36">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
